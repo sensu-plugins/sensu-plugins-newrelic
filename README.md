@@ -5,6 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-newrelic/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-newrelic)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-newrelic/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-newrelic)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-newrelic.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-newrelic)
+[ ![Codeship Status for sensu-plugins/sensu-plugins-newrelic](https://codeship.com/projects/785f3b30-e89c-0132-b373-0e94167ad564/status?branch=master)](https://codeship.com/projects/82846)
 
 ## Functionality
 
