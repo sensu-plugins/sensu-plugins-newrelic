@@ -16,16 +16,18 @@ notifications:
     on_failure: always
 script:
 - bundle exec rake default
+- gem build sensu-plugins-newrelic.gemspec
+- gem install sensu-plugins-newrelic-*.gem
 deploy:
   provider: rubygems
   api_key:
-    secure: Vm1yUgwueJouXyL52TpXQulRTcF9CBPiyJ4rCPI7VBCeOMDv59SPrbP96/r8fjUX4QhgNsl8LYeCR/QUMu2+gmM/731+EjDDZ4J8cR6XhQTm213Rue91GJdk51sjIdaN3YKfuo9duHudyV8rU3hgl+k2xo6eVzvZcLjwgWL1m+o=
+    secure: ZkfALW0QaNmrzo614XgbB1VRldqL5rImTBRBV26iWwxcQ4RQozW3SL36Wz5N9E4S6EsUqds44ePgvFoNfxYVSLTD/AzpdiVkdsw+Tj46LnBa2LOk4IFf/QEWjkDO9CFXRAhq7UOe2aFPaOmTuQv6gn+krzt60Cs+izOaqT2E9lc=
   gem: sensu-plugins-newrelic
   on:
     tags: true
-    all_branches: true
+    repo: sensu-plugins/sensu-plugins-newrelic
+     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
     rvm: 2.1
     rvm: 2.2
-    repo: sensu-plugins/sensu-plugins-newrelic
